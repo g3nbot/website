@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>g3n OS</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
+    body {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Exoplanet_K2-18_b_%28Illustration%29.jpg/2560px-Exoplanet_K2-18_b_%28Illustration%29.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      background-color: transparent;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      gap: 40px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    nav .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+    nav .dropdown-content a {
+      color: #ffffff;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    nav .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      padding: 0 20px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 27px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <div class="logo">g3n OS</div>
+    <nav>
+      <div class="dropdown">
+        <a href="#">Robot Company</a>
+        <div class="dropdown-content">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Robot Developers</a>
+        <div class="dropdown-content">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+  <main>
+    <h1>We are connecting every robot in the universe</h1>
+    <p>
+  We enable developers to create apps to power the robotic economy with applications like UBI monitoring, Robot Behavior Safety Check, Robot-as-a-service (Uber-like), Payment, AI agents, AI models, Data Store and more.
+</p>
+  </main>
+</body>
+</html>
